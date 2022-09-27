@@ -44,12 +44,12 @@ step1：空间实体标注的TokenClassification任务；<br>
 step2：对每个空间实体，标注其空间语义信息的TokenClassification任务；<br>
 step3：对每组空间语义信息，判断真值的SequenceClassification任务<br>
 
-训练成绩：
-task1:
-score: 0.6678299492385786
-task2:
-score1:  0.008559201141226819
-score2:  0.7412048324911064
-score3: 0.6396795643493179
-task3: 
-score； 0.4541270427631183
+训练成绩：<br>
+task1:<br>
+score: 0.6678299492385786<br>
+task2:，<br>
+score1:  0.008559201141226819<br>
+score2:  0.7412048324911064<br>
+score3: 0.6396795643493179<br>
+task3: <br>
+score； 0.4541270427631183<br>
