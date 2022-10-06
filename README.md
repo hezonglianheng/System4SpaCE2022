@@ -1,5 +1,5 @@
 # System4SpaCE2022
-作者参加了由北京大学詹卫东教授课题组组织的SpaCE2022空间语义角色识别的标注任务。此后，作者完成了该任务3个task的transformers模型搭建和训练工作。<br>
+作者参加了由[北京大学詹卫东教授课题组](http://ccl.pku.edu.cn/seminar/)组织的SpaCE2022空间语义角色识别的标注任务。此后，作者完成了该任务3个task的transformers模型搭建和训练工作。<br>
 
 任务官网：https://2030nlp.github.io/SpaCE2022/<br>
 
@@ -9,7 +9,7 @@ Linux Ubuntu 20.04.4<br>
 Pytorch v1.10<br>
 
 项目结构：（省略部分结构相仿）
-- chinese_wwm_ext_pytorch（来自哈工大科大讯飞实验室的用于BERT的预训练模型）<br>
+- chinese_wwm_ext_pytorch（来自[哈工大科大讯飞实验室](https://github.com/ymcui/Chinese-BERT-wwm)的用于BERT的预训练模型）<br>
 - data（源数据及分割数据）<br>
     - task1<br>
         - task1_train.json（原始训练集）<br>
@@ -19,8 +19,8 @@ Pytorch v1.10<br>
     - task3_1<br>
     - test_set<br>
         - task1_test_input.json（task1测试集）<br>
-        - task2_test_input.json<br>
-        - task3_test_input.json<br>
+        - task2_test_input.json（task2测试集）<br>
+        - task3_test_input.json（task3测试集）<br>
 - get_answer（将结果.json文件转换为.jsonl文件以提交）<br>
 - task1<br>
     - experiment（保存日志文件、训练好的模型及结果）<br>
@@ -35,7 +35,7 @@ Pytorch v1.10<br>
 - task2_1<br>
 - task3_1<br>
 
-本项目基于Hugging Face 提供的BERT实现。<br>
+本项目基于[Hugging Face](https://huggingface.co/)提供的BERT实现。<br>
 其中，task1是简单的SequenceClassification任务模型；<br>
 task2为一个TokenClassification任务的联合训练，效果差，遂放弃；<br>
 task2_1根据错误种类A、B、C分为3个TokenClassification任务进行训练；<br>
